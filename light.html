@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+ 
+    #light{
+        
+        margin-top: 10%;
+        display: grid ;
+        place-items: center ;
+        mix-blend-mode: color-burn;
+    }
+#btn{
+    display: grid ;
+        place-items: center ;
+}
+
+
+</style>
+<body>
+    <div id="bg">
+
+
+    <div id="light" > <img id="bulb" src="bulbOn.jpeg" alt="" width="10%"></div>
+ <div id="btn"  ><button value="1">Click</button></div>
+
+</div>
+
+    <script>
+          var c = document.getElementById("btn");
+          var light = document.getElementById("bulb") ;
+
+  c.onclick = function b()
+ {  
+   
+       if(c.value == 1)
+{
+     document.body.style.backgroundColor = "orange";
+     light.setAttribute("src","bulbOn.jpeg");
+   
+    c.value  = 0 ;
+
+
+}    
+else
+   {  
+    light.setAttribute("src","lightbulb.png.crdownload");
+
+
+     document.body.style.backgroundColor = "white"; 
+    
+    c.value = 1 ;
+
+   }
+    
+    
+    }
+
+
+  
+    
+ 
+
+
+    </script>
+</body>
+
+</html>
